@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dania.unite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SendTo"
+            android:label="Direct">
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="image/*" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".ImageChatViewer" />
+        <activity
+            android:name=".ChattingActivity">
+        </activity>
+        <activity android:name=".posts_sample" />
+        <activity android:name=".voice_modifier" />
+        <activity android:name=".UserProfileView" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".EditPost" />
+
+        <receiver
+            android:name=".RestartService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="RestartService" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+
+        <activity android:name=".Result" />
+        <activity
+            android:name=".QuesRes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageMessagesViewer"
+            android:theme="@style/ImgViewerTheme" />
+        <activity
+            android:name=".LikesActivity"
+            android:theme="@style/CommentsTheme" />
+        <activity android:name=".post_profile_image_viewer" />
+        <activity
+            android:name=".CommentsActivity"
+            android:theme="@style/CommentsTheme" />
+        <activity
+            android:name=".Add_new_post_activity"
+            android:label="Post">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Message2" />
+        <activity
+            android:name=".image_viewer_act"
+            android:theme="@style/ImgViewerTheme" />
+        <activity android:name=".chat_user" />
+        <activity android:name=".chat_user_setting" />
+        <activity android:name=".Main3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity android:name=".StartActivity"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- optional (needed if default theme has no action bar) -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8fd63b298bf5aaeda785dc220075e0799dc06386" />
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

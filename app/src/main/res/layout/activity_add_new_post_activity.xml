@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Add_new_post_activity">
+
+    <RelativeLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="48dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Post"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/bar_layout">
+
+
+        <EditText
+            android:id="@+id/post_description"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:inputType="textMultiLine"
+            android:background="#ffffff"
+            android:hint="Say something about this photo..."
+            />
+
+        <ImageButton
+            android:id="@+id/add_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:background="#ffffff"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/post_description"
+            android:src="@drawable/add_image"/>
+
+        <Button
+            android:id="@+id/publish_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/add_image"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Add to your post"
+            android:background="@drawable/rec_round_corners_small"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

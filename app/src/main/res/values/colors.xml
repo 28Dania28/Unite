@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>//#00ACC1
+    <color name="colorPrimaryDarkText">#00897B</color>//#00838F
+    <color name="black_overlay">#ffffff</color>
+    <color name="blackPearl">#051E34</color>
+    <color name="wedgeWood">#486282</color>
+    <color name="colorAccent">#000000</color>
+    <color name="Black1">#000000</color>
+    <color name="Black2">#2B2B2B</color>
+    <color name="Black3">#3C3F41</color>
+    <color name="Translucent">#00ffffff</color>
+    <color name="Transparent">#00555555</color>
+    <color name="Black4">#3C3F41</color>
+    <color name="Black5">#595B5D</color>
+    <color name="online_green">#4CAF50</color>
+
+
+</resources>

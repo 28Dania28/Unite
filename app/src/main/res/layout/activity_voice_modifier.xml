@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    tools:context=".voice_modifier">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Enter Voice Frequency (>3999)"
+        android:gravity="center"
+        android:id="@+id/set_frequency" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_below="@+id/set_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Recording"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_below="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_below="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Recording"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

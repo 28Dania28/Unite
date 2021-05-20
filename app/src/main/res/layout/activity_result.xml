@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_title">
+        <TextView
+            android:id="@+id/destinyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destiny found these for you."
+            android:textColor="#ffffff"
+            android:background="@color/Black3"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_title"
+        android:text="1st"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/first_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"/>
+    <TextView
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_pref"
+        android:text="2nd"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/second_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2"/>
+    <TextView
+        android:id="@+id/r3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_pref"
+        android:text="3rd"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/third_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r3"/>
+
+</RelativeLayout>

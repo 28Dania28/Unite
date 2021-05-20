@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".CommentsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comments_activity_relative_layout">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/go_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                />
+
+            <ImageView
+                android:id="@+id/like_image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@+id/go_back"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_favorite_red_24dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/likes_count"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/like_image"
+                android:text=" 0 Likes"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/comments_recycler_view"
+            android:layout_below="@+id/top_layout"
+            android:layout_above="@+id/comment_short"
+            android:paddingBottom="2dp"/>
+
+        <RelativeLayout
+            android:id="@+id/comment_short"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/bottom">
+            <Button
+                android:id="@+id/emoji_love"
+                android:text="❤"
+                android:textSize="20sp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#ffffff"/>
+
+
+            <Button
+                android:id="@+id/emoji_fire"
+                android:layout_toRightOf="@id/emoji_love"
+                android:text="🔥"
+                android:textSize="20sp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#ffffff"/>
+
+            <Button
+                android:id="@+id/emoji_face1"
+                android:layout_toRightOf="@id/emoji_fire"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:text="😍"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_toRightOf="@+id/emoji_face1"
+                android:id="@+id/emoji_face2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:text="😀"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/emoji_face3"
+                android:layout_toRightOf="@id/emoji_face2"
+                android:textSize="20sp"
+                android:text="😂"
+                android:layout_width="45dp"
+                android:background="#ffffff"
+                android:layout_height="45dp"/>
+
+            <Button
+                android:layout_toRightOf="@+id/emoji_face3"
+                android:id="@+id/emoji_face4"
+                android:text="😲"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <Button
+                android:layout_toRightOf="@+id/emoji_face4"
+                android:id="@+id/emoji_clap"
+                android:text="👏"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <Button
+                android:layout_toRightOf="@+id/emoji_clap"
+                android:id="@+id/emoji_ok"
+                android:text="👌"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f7f7f7"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="#f7f7f7"
+                android:layout_alignParentStart="true"/>
+
+            <RelativeLayout
+                android:id="@+id/edit_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/add_btn"
+                android:layout_toStartOf="@+id/btn_send"
+                android:background="@drawable/rec_round_off_white"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/comment_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="40dp"
+                    android:inputType="textMultiLine"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="Write a comment..." />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/comment_send_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

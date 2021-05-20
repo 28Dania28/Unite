@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendTo">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:elevation="20dp"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/go_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ffffff"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send To"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/go_back"
+            android:textStyle="bold"
+            android:textColor="#44494F"
+            android:elevation="10dp"
+            android:textSize="23sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="monospace"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:textStyle="bold"
+            android:textColor="#44494F"
+            android:layout_marginLeft="10px"
+            android:elevation="10dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="monospace"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay2"/>
+
+</RelativeLayout>

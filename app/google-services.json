@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "518852867303",
+    "firebase_url": "https://unite-13227.firebaseio.com",
+    "project_id": "unite-13227",
+    "storage_bucket": "unite-13227.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518852867303:android:b852c737a7b28fa4",
+        "android_client_info": {
+          "package_name": "com.dania.unite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518852867303-88tc7j8ca570jdb0u1800uii6aikhf7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dania.unite",
+            "certificate_hash": "46380a91bea89bb9d3e830876fc1256aafd49d49"
+          }
+        },
+        {
+          "client_id": "518852867303-0mcoqvtlkctvjkvn6spfci72jkq4grki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADZ31bTxlUA1kZAwCkkiR81cey0Y2a2gU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518852867303-0mcoqvtlkctvjkvn6spfci72jkq4grki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

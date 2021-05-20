@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".QuesRes">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You answers have been submitted .
+Thank you"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/info"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:background="@drawable/select_option_layout"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="normal"
+        android:id="@+id/ques"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:background="@drawable/ques_lay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/space"
+        android:orientation="horizontal"
+        android:layout_below="@id/ques"
+        android:layout_marginTop="40dp"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay2"
+        android:layout_below="@+id/space"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/option1"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@drawable/options_lay"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/option2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/option1"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@drawable/options_lay"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/option3"
+            android:layout_below="@id/option2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@drawable/options_lay"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/option4"
+            android:layout_below="@+id/option3"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@drawable/options_lay"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

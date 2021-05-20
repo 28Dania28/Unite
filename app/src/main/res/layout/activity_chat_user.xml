@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8fa"
+    tools:context=".chat_user">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_nav_person"
+        android:layout_marginTop="100dp"
+        android:transitionName="image_to_show_transition"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Username"
+        android:transitionName="text_to_show_transition"
+        android:layout_below="@+id/profile_image"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright Ⓒ 2019 Dania"
+        android:fontFamily="monospace"
+        android:textStyle="normal"
+        android:textSize="12dp"
+        android:textColor="@color/Black5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/add_as_friend"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_as_friend_lay"
+        android:text="Add as Friend"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/add_as_love"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_as_love"
+        android:text="Add as Love"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/remove_as_friend"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remove_as_friend"
+        android:text="Remove as Friend"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/add_as_love"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/remove_as_love"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remove_as_love"
+        android:text="Remove as Love"
+        android:textColor="#FFFFFF"/>
+
+
+
+    </RelativeLayout>

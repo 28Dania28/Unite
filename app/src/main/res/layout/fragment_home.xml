@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/lnr_chat"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/quesAct"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_group_work_black_24dp"/>
+        <TextView
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:textColor="#44494F"
+            android:elevation="10dp"
+            android:textSize="23sp"
+            />
+        <Button
+            android:id="@+id/resAct"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_nature_people_black_24dp"/>
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr_chat"
+        android:background="#fff"
+        app:tabSelectedTextColor="#44494F"
+        app:tabTextAppearance="@style/TabLayout"
+        app:tabIndicatorColor="#44494F"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextColor="#44494F"/>
+
+    <LinearLayout
+        android:id="@+id/lnr_space"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        android:background="#bbbbbb"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnr_space"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

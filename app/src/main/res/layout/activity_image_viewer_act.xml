@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#000000"
+    tools:context=".image_viewer_act">
+
+    <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+        android:id="@+id/image_to_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        android:transitionName="image_to_show_transition" />
+
+
+    <TextView
+        android:id="@+id/text_to_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heading"
+        android:transitionName="text_to_show_transition"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
